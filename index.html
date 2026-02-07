@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day 🌹</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background: linear-gradient(to bottom, #fdeff9, #ec38bc, #7303c0);
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+  text-align:center;
+  z-index:2;
+  padding:25px;
+  background: rgba(255,255,255,0.85);
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+h1{
+  font-size:2.1rem;
+  color:#a1005d;
+}
+
+p{
+  font-size:1.05rem;
+  color:#4a0033;
+  line-height:1.6;
+}
+
+.rose{
+  position:absolute;
+  font-size:26px;
+  animation: float 6s linear infinite;
+  opacity:0.9;
+}
+
+@keyframes float{
+  0%{transform:translateY(100vh);}
+  100%{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🌹 Happy Rose Day 🌹</h1>
+  <p>
+    Rose bhanya phool matra hoina,<br>
+    kasailai yaad garera muskaan dinu pani ho 🙂
+  </p>
+  <p><b>Yo rose timro lagi</b> 💛</p>
+</div>
+
+<script>
+for(let i=0;i<30;i++){
+  let rose=document.createElement("div");
+  rose.className="rose";
+  rose.innerHTML="🌹";
+  rose.style.left=Math.random()*100+"vw";
+  rose.style.animationDuration=(4+Math.random()*4)+"s";
+  document.body.appendChild(rose);
+}
+</script>
+
+<!-- Background Music: Asaar - Bipul Chettri -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/3W6rZq8xYfU?autoplay=1&loop=1&playlist=3W6rZq8xYfU"
+frameborder="0" allow="autoplay"></iframe>
+
+</body>
+</html>
